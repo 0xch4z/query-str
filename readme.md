@@ -1,35 +1,35 @@
-query_parse
+query-str
 ======
-### Parse and generate URL query strings with ease. 🚀
-
+### Parse and stringify URL query strings with ease. 🚀
+<br></br>
 ## Installation ⬇️
 ```bash
-$ npm install query_parse
+$ npm install --save query-str
 ```
+<br></br>
 API Usage 📝
 -----
-
 ### Parse query string with URL
 ```js
-const queryParse = require('query_parse');
+const qs = require('query-str');
 
 const myURL = 'http://foo.bar/buzz?myBool=true&myInt=2&myFloat=3.3&myString=fizz%20buzz';
-queryParse.parse(myURL);
+qs.parse(myURL);
 // => { myBool: true, myInt: 2, myFloat: 3.3, myString: 'fizz buzz' }
 ```
 
 ### Parse query string
 ```js
-const queryParse = require('query_parse');
+const qs = require('query-str');
 
 const myURL = 'isOpenSource=true&isPassing=true&codacyScore=10.0';
-queryParse.parse(myURL);
+qs.parse(myURL);
 // => { isOpenSource: true, isPassing: true, codacyScore: 10.0 }
 ```
 
-### Generate query string with URL
+### Stringify parameter object with URL
 ```js
-const queryParse = require('query_parse');
+const qs = require('query-str');
 
 const myURL = 'https://foo.bar/buzz'
 
@@ -38,13 +38,13 @@ const myParams = {
   bazz: 22
 };
 
-queryParse.generate(myParams, myURL);
-// => 'http://foo.bar/buzz?fin=false&bazz=22'
+qs.stringify(myParams, myURL);
+// => 'https://foo.bar/buzz?fin=false&bazz=22'
 ```
 
-### Generate query string
+### Stringify parameter object
 ```js
-const queryParse = require('query_parse');
+const qs = require('query-str');
 
 const myParams = {
   myBool: false,
@@ -53,6 +53,6 @@ const myParams = {
   myString: 'fin fun'
 };
 
-queryParse.generate(myParams);
-// => 'myBool=false&myInt=6&myFloat=3.3&myString=fin%20fun'
+qs.stringify(myParams);
+// => '?myBool=false&myInt=6&myFloat=3.3&myString=fin%20fun'
 ```
