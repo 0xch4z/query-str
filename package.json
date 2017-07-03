@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/charliekenney23/query-parse.git"
+    "url": "git+https://github.com/charliekenney23/query-str.git"
   },
   "keywords": [
     "query",
@@ -20,9 +20,9 @@
   "author": "Charles Kenney",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/charliekenney23/query-parse/issues"
+    "url": "https://github.com/charliekenney23/query-str/issues"
   },
-  "homepage": "https://github.com/charliekenney23/query-parse#readme",
+  "homepage": "https://github.com/charliekenney23/query-str#readme",
   "devDependencies": {
     "chai": "^4.0.2",
     "eslint": "^4.1.1",

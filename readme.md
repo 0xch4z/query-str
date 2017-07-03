@@ -31,7 +31,7 @@ qs.parse(myURL);
 ```js
 const qs = require('query-str');
 
-const myURL = 'https://foo.bar/buzz'
+const myURL = 'https://foo.bar/buzz';
 
 const myParams = {
   fin: false,
