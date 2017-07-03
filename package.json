@@ -1,0 +1,26 @@
+{
+  "name": "query_parse",
+  "version": "0.2.0",
+  "description": "A tool kit for parsing/generating query strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charliekenney23/query-parse.git"
+  },
+  "keywords": [
+    "query",
+    "url",
+    "parameters",
+    "parse",
+    "json"
+  ],
+  "author": "Charles Kenney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charliekenney23/query-parse/issues"
+  },
+  "homepage": "https://github.com/charliekenney23/query-parse#readme"
+}
