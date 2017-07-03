@@ -1,6 +1,4 @@
 'use strict';
 
-const parse = require('./src/Parse');
-const stringify = require('./src/Stringify');
-
-module.exports = { parse, stringify };
+exports.parse = require('./src/Parse');
+exports.stringify = require('./src/Stringify');
