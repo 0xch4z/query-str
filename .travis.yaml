@@ -1,10 +1,10 @@
-language: node_JS
+language: node_js
 node_js:
  - "stable"
 
 before-script:
- - npm install --save-dev mocha
- - npm install --save-dev chai
+ - npm install -g mocha
+ - npm install -g chai
 
 script:
  - npm run test
