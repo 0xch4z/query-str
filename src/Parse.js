@@ -1,7 +1,7 @@
 'use strict';
 
 const parseType = t => {
-  if (t.toLowerCase() === 'true' || t.toLowerCase() === 'false') {
+  if (/true|false/i.test(t)) {
     return t === 'true';
   } else if (!isNaN(t)) {
     return t.includes('.') ? parseFloat(t) : parseInt(t);
@@ -15,7 +15,6 @@ const parse = url => {
     const props = param.split('=');
     return `"${props[0]}":${parseType(props[1]) || 'undefined'}`;
   }).join(',');
-
   return JSON.parse(`{ ${params} }`);
 };
 
