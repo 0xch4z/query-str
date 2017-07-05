@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5b2bd8ad55194a5eaa2bb0537d5f6960)](https://www.codacy.com/app/charlesc.kenney/query-str?utm_source=github.com&utm_medium=referral&utm_content=Charliekenney23/query-str&utm_campaign=badger)
 query-str [![Travis](https://img.shields.io/travis/Charliekenney23/query-str.svg)](https://travis-ci.org/Charliekenney23/query-str)
 ======
 ### Parse and stringify URL query strings with ease. 🚀
