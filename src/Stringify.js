@@ -1,21 +1,32 @@
 'use strict';
 
-const stringifyType = t => {
-  switch(typeof(t)) {
+/**
+ * Stringify query string parameters.
+ *
+ * @param {any} param - The parameter to be stringified.
+ */
+const stringifyParam = param => {
+  switch(typeof(param)) {
     case 'boolean':
-      return t === true ? 'true' : 'false';
+      return param === true ? 'true' : 'false';
     case 'string':
-      return encodeURIComponent(t);
+      return encodeURIComponent(param);
     default:
-      return t;
+      return param;
   }
 };
 
+/**
+ * Parse query string parameters.
+ *
+ * @param {any} params - The parameters to be stringified.
+ * @param {any} baseURL - An optional baseURL.
+ */
 const stringify = (params, baseURL = '') => {
   let query = ''; let i = 0;
   for (const p of Object.keys(params)) {
     if (i !== 0) query += '&';
-    query += `${p}=${stringifyType(params[p])}`;
+    query += `${p}=${stringifyParam(params[p])}`;
     i++;
   }
   return `${baseURL}?${query}`;
