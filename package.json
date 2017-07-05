@@ -4,7 +4,9 @@
   "description": "A tool kit for parsing/generating query strings",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test && echo 'Done (:' "
+    "test": "mocha test && echo 'Done (:' ",
+    "coverage": "istanbul cover _mocha test -x test --recursive && codecov",
+    "report": "open coverage/lcov-report/index.html"
   },
   "repository": {
     "type": "git",
@@ -25,11 +27,13 @@
   "homepage": "https://github.com/charliekenney23/query-str#readme",
   "devDependencies": {
     "chai": "^4.0.2",
+    "codecov": "^2.2.0",
     "eslint": "^4.1.1",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.6.1",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.1.0",
+    "istanbul": "^0.4.5",
     "mocha": "^3.4.2"
   }
 }

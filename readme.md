@@ -1,4 +1,4 @@
-query-str
+query-str [![Travis](https://img.shields.io/travis/Charliekenney23/query-str.svg)](https://travis-ci.org/Charliekenney23/query-str)
 ======
 ### Parse and stringify URL query strings with ease. 🚀
 <br></br>
