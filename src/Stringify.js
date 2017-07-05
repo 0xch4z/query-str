@@ -19,8 +19,8 @@ const stringifyParam = param => {
 /**
  * Parse query string parameters.
  *
- * @param {any} params - The parameters to be stringified.
- * @param {any} baseURL - An optional baseURL.
+ * @param {object} params - The parameters to be stringified.
+ * @param {string} baseURL - An optional baseURL.
  */
 const stringify = (params, baseURL = '') => {
   let query = ''; let i = 0;
