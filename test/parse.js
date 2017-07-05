@@ -37,10 +37,11 @@ describe('Parse - URL With Query String #4', () => {
   });
 });
 
-describe('Parse - URL With Query String #1', () => {
-  it('should return { version: 2.2 }', () => {
-    assert.equal(JSON.stringify(parse('https://foo.fin/api/docs?version=2.2')), JSON.stringify({
-      version: 2.2,
+describe('Parse - URL With Query String #5', () => {
+  it('should return { foo: 1, bar: 2 }', () => {
+    assert.equal(JSON.stringify(parse('https://foo.fin/api/docs?foo=1&bar=2')), JSON.stringify({
+      foo: 1,
+      bar: 2,
     }));
   });
 });
