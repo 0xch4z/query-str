@@ -2,6 +2,7 @@
 [![Codecov](https://img.shields.io/codecov/c/github/Charliekenney23/query-str.svg)](https://codecov.io/gh/Charliekenney23/query-str)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5b2bd8ad55194a5eaa2bb0537d5f6960)](https://www.codacy.com/app/charlesc.kenney/query-str?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Charliekenney23/query-str&amp;utm_campaign=Badge_Grade)
 [![npm](https://img.shields.io/npm/v/query-str.svg)](https://www.npmjs.com/package/query-str)
+[![npm](https://img.shields.io/npm/dw/query-str.svg)]()
 
 query-str
 ======
