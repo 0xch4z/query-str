@@ -1,7 +1,8 @@
 /**
- * Stringify query string parameters.
+ * Maps given value to string for query string
  *
  * @param {any} param - The parameter to be stringified.
+ * @return {string} - stringified parameter
  */
 const stringifyParam = (param) => {
   switch (typeof (param)) {
@@ -15,10 +16,11 @@ const stringifyParam = (param) => {
 };
 
 /**
- * Parse query string parameters.
+ * Parses query string parameters and maps them to a URL query string
  *
  * @param {object} params - The parameters to be stringified.
  * @param {string} baseURL - An optional baseURL.
+ * @param {string} - stringified url query string
  */
 const stringify = (params, baseURL = '') => {
   let query = '';
