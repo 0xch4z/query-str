@@ -27,10 +27,10 @@
   "homepage": "https://github.com/charliekenney23/query-str#readme",
   "devDependencies": {
     "chai": "^4.0.2",
-    "codecov": "^2.2.0",
-    "eslint": "^4.1.1",
-    "eslint-config-airbnb": "^15.0.1",
+    "codecov": "^3.5.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
     "istanbul": "^0.4.5",
-    "mocha": "^3.4.2"
+    "mocha": "^6.1.4"
   }
 }
