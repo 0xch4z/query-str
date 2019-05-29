@@ -9,6 +9,9 @@
 <p align="center">Parse and stringify URL query strings with ease. 🚀</p>
 
 ## Installation ⬇️
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Charliekenney23/query-str.svg)](https://greenkeeper.io/)
+
 ```bash
 $ npm install --save query-str
 ```
